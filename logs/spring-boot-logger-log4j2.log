@@ -1,0 +1,4 @@
+2022-01-24 23:25:33,210 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 6.1.7.Final
+2022-01-24 23:25:33,255 INFO o.s.b.StartupInfoLogger [main] Starting MaybankTestApplication on AD0525-NB-01 with PID 14248 (C:\Users\AD0525\grace.ng\test\Maybank\maybankTest\target\classes started by ad0525 in C:\Users\AD0525\grace.ng\test\Maybank)
+2022-01-24 23:25:33,259 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v2.3.12.RELEASE, Spring v5.2.15.RELEASE
+2022-01-24 23:25:33,260 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default

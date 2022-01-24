@@ -1,0 +1,54 @@
+2022-01-24 22:41:21,542 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 6.1.7.Final
+2022-01-24 22:41:21,586 INFO o.s.b.StartupInfoLogger [main] Starting MaybankTestApplication on AD0525-NB-01 with PID 1268 (C:\Users\AD0525\grace.ng\test\Maybank\maybankTest\target\classes started by ad0525 in C:\Users\AD0525\grace.ng\test\Maybank)
+2022-01-24 22:41:21,590 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v2.3.12.RELEASE, Spring v5.2.15.RELEASE
+2022-01-24 22:41:21,591 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2022-01-24 22:41:22,393 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-24 22:41:22,423 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 20ms. Found 0 JPA repository interfaces.
+2022-01-24 22:41:24,899 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-01-24 22:41:24,908 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2022-01-24 22:41:24,909 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2022-01-24 22:41:24,909 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.46]
+2022-01-24 22:41:25,065 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-01-24 22:41:25,065 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3423 ms
+2022-01-24 22:41:25,344 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-24 22:41:25,391 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 5.4.32.Final
+2022-01-24 22:41:25,522 INFO o.h.a.c.r.j.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-24 22:41:25,636 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2022-01-24 22:41:27,346 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-01-24 22:41:27,370 INFO o.h.d.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+2022-01-24 22:41:28,456 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-24 22:41:28,467 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-24 22:41:30,395 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-01-24 22:41:30,482 INFO o.s.s.c.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2022-01-24 22:41:30,705 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2022-01-24 22:41:30,728 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-24 22:41:30,737 INFO o.s.b.StartupInfoLogger [main] Started MaybankTestApplication in 9.514 seconds (JVM running for 10.253)
+2022-01-24 22:41:51,335 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-01-24 22:41:51,335 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2022-01-24 22:41:51,340 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-2] Completed initialization in 5 ms
+2022-01-24 22:41:51,609 INFO c.e.m.s.p.ProductServiceImpl [ForkJoinPool.commonPool-worker-1] Execute product update:UpdateProductCommand(productId=29, productName=Elsa, productType=TOYS, productPricePerUnit=11.59, productQuantity=12, modifiedBy=Grace)
+2022-01-24 22:41:51,654 DEBUG o.a.i.l.j.BaseJdbcLogger [ForkJoinPool.commonPool-worker-1] ==>  Preparing: select * from product where id = ? and status='ACTIVE'
+2022-01-24 22:41:51,671 DEBUG o.a.i.l.j.BaseJdbcLogger [ForkJoinPool.commonPool-worker-1] ==> Parameters: 29(String)
+2022-01-24 22:41:51,719 DEBUG o.a.i.l.j.BaseJdbcLogger [ForkJoinPool.commonPool-worker-1] <==      Total: 0
+2022-01-24 22:41:51,720 ERROR c.e.m.s.p.ProductServiceImpl [ForkJoinPool.commonPool-worker-1] Product not found for id:29
+2022-01-24 22:41:51,728 ERROR c.e.m.c.ProductController [ForkJoinPool.commonPool-worker-1] Unable to archive product due to {}
+org.springframework.web.server.ResponseStatusException: 400 BAD_REQUEST "Product not found."
+	at com.example.maybankTest.services.product.ProductServiceImpl.execute(ProductServiceImpl.java:91) ~[classes/:?]
+	at com.example.maybankTest.services.product.ProductServiceImpl$$FastClassBySpringCGLIB$$5ddf8409.invoke(<generated>) ~[classes/:?]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.2.15.RELEASE.jar:5.2.15.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779) ~[spring-aop-5.2.15.RELEASE.jar:5.2.15.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.2.15.RELEASE.jar:5.2.15.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.2.15.RELEASE.jar:5.2.15.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:367) ~[spring-tx-5.2.15.RELEASE.jar:5.2.15.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118) ~[spring-tx-5.2.15.RELEASE.jar:5.2.15.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.15.RELEASE.jar:5.2.15.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.2.15.RELEASE.jar:5.2.15.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692) ~[spring-aop-5.2.15.RELEASE.jar:5.2.15.RELEASE]
+	at com.example.maybankTest.services.product.ProductServiceImpl$$EnhancerBySpringCGLIB$$c81aa4ed.execute(<generated>) ~[classes/:?]
+	at com.example.maybankTest.controller.ProductController.lambda$updateProductById$2(ProductController.java:48) ~[classes/:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1604) [?:1.8.0_271]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1596) [?:1.8.0_271]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289) [?:1.8.0_271]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1067) [?:1.8.0_271]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1703) [?:1.8.0_271]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:172) [?:1.8.0_271]

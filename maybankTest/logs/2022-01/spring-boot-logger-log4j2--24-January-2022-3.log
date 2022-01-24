@@ -1,0 +1,26 @@
+2022-01-24 23:13:00,621 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 6.1.7.Final
+2022-01-24 23:13:00,650 INFO o.s.b.StartupInfoLogger [main] Starting MaybankTestApplicationTests on AD0525-NB-01 with PID 12168 (started by ad0525 in C:\Users\AD0525\grace.ng\test\Maybank\maybankTest)
+2022-01-24 23:13:00,660 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v2.3.12.RELEASE, Spring v5.2.15.RELEASE
+2022-01-24 23:13:00,662 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2022-01-24 23:13:01,451 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-24 23:13:01,481 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 21ms. Found 0 JPA repository interfaces.
+2022-01-24 23:13:02,536 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-24 23:13:02,629 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 5.4.32.Final
+2022-01-24 23:13:02,810 INFO o.h.a.c.r.j.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-24 23:13:04,404 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2022-01-24 23:13:06,104 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-01-24 23:13:06,125 INFO o.h.d.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+2022-01-24 23:13:07,098 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-24 23:13:07,109 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-24 23:13:09,445 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-01-24 23:13:09,663 INFO o.s.s.c.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2022-01-24 23:13:10,261 INFO o.s.b.StartupInfoLogger [main] Started MaybankTestApplicationTests in 9.907 seconds (JVM running for 11.186)
+2022-01-24 23:13:10,523 INFO c.e.m.s.p.ProductServiceImpl [main] Product creation with request body: CreateProductCommand(productName=Test Name, productType=TOYS, productPricePerUnit=11.5, productQuantity=10, createBy=testor)
+2022-01-24 23:13:10,570 DEBUG o.a.i.l.j.BaseJdbcLogger [main] ==>  Preparing: insert into product (product_name,product_type,product_price_per_unit,product_quantity,status,date_created,created_by) values ( ?, ?, ?, ?,?,?,? )
+2022-01-24 23:13:10,590 DEBUG o.a.i.l.j.BaseJdbcLogger [main] ==> Parameters: Test Name(String), TOYS(String), 11.5(Double), 10(Integer), ACTIVE(String), 2022/01/24 23:13:10(String), testor(String)
+2022-01-24 23:13:10,596 DEBUG o.a.i.l.j.BaseJdbcLogger [main] <==    Updates: 1
+2022-01-24 23:13:10,597 INFO c.e.m.s.p.ProductServiceImpl [main] Product creation with successfully: Product(id=0, productName=Test Name, productType=TOYS, productPricePerUnit=11.5, productQuantity=10, status=ACTIVE, dateCreated=2022/01/24 23:13:10, dateModified=null, createdBy=testor, modifiedBy=null)
+2022-01-24 23:13:10,718 INFO o.s.s.c.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2022-01-24 23:13:10,741 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-24 23:13:10,744 INFO c.z.h.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2022-01-24 23:13:10,750 INFO c.z.h.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.

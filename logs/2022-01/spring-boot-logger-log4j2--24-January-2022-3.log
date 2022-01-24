@@ -1,0 +1,107 @@
+2022-01-24 22:44:01,558 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 6.1.7.Final
+2022-01-24 22:44:01,603 INFO o.s.b.StartupInfoLogger [main] Starting MaybankTestApplication on AD0525-NB-01 with PID 5072 (C:\Users\AD0525\grace.ng\test\Maybank\maybankTest\target\classes started by ad0525 in C:\Users\AD0525\grace.ng\test\Maybank)
+2022-01-24 22:44:01,610 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v2.3.12.RELEASE, Spring v5.2.15.RELEASE
+2022-01-24 22:44:01,611 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2022-01-24 22:44:02,442 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-24 22:44:02,473 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 21ms. Found 0 JPA repository interfaces.
+2022-01-24 22:44:04,925 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-01-24 22:44:04,932 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2022-01-24 22:44:04,933 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2022-01-24 22:44:04,933 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.46]
+2022-01-24 22:44:05,055 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-01-24 22:44:05,055 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3397 ms
+2022-01-24 22:44:05,318 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-24 22:44:05,376 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 5.4.32.Final
+2022-01-24 22:44:05,520 INFO o.h.a.c.r.j.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-24 22:44:05,661 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2022-01-24 22:44:07,362 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-01-24 22:44:07,383 INFO o.h.d.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+2022-01-24 22:44:08,822 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-24 22:44:08,829 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-24 22:44:10,692 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-01-24 22:44:10,769 INFO o.s.s.c.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2022-01-24 22:44:10,996 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2022-01-24 22:44:11,021 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-24 22:44:11,029 INFO o.s.b.StartupInfoLogger [main] Started MaybankTestApplication in 9.808 seconds (JVM running for 10.633)
+2022-01-24 22:44:32,619 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-01-24 22:44:32,619 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2022-01-24 22:44:32,627 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-2] Completed initialization in 7 ms
+2022-01-24 22:44:32,880 INFO c.e.m.s.p.ProductServiceImpl [ForkJoinPool.commonPool-worker-1] Product creation with request body: CreateProductCommand(productName=Bearbrick 2, productType=TOYS, productPricePerUnit=35.0, productQuantity=20, createBy=Grace)
+2022-01-24 22:44:32,911 DEBUG o.a.i.l.j.BaseJdbcLogger [ForkJoinPool.commonPool-worker-1] ==>  Preparing: insert into product (product_name,product_type,product_price_per_unit,product_quantity,status,date_created,created_by) values ( ?, ?, ?, ?,?,?,? )
+2022-01-24 22:44:32,923 DEBUG o.a.i.l.j.BaseJdbcLogger [ForkJoinPool.commonPool-worker-1] ==> Parameters: Bearbrick 2(String), TOYS(String), 35.0(Double), 20(Integer), ACTIVE(String), 2022/01/24 22:44:32(String), Grace(String)
+2022-01-24 22:44:32,927 DEBUG o.a.i.l.j.BaseJdbcLogger [ForkJoinPool.commonPool-worker-1] <==    Updates: 1
+2022-01-24 22:44:32,928 INFO c.e.m.s.p.ProductServiceImpl [ForkJoinPool.commonPool-worker-1] Product creation with successfully: Product(id=0, productName=Bearbrick 2, productType=TOYS, productPricePerUnit=35.0, productQuantity=20, status=ACTIVE, dateCreated=2022/01/24 22:44:32, dateModified=null, createdBy=Grace, modifiedBy=null)
+2022-01-24 22:44:39,676 INFO c.e.m.s.p.ProductServiceImpl [ForkJoinPool.commonPool-worker-1] Execute product update:UpdateProductCommand(productId=29, productName=Elsa, productType=TOYS, productPricePerUnit=11.59, productQuantity=12, modifiedBy=Grace)
+2022-01-24 22:44:39,679 DEBUG o.a.i.l.j.BaseJdbcLogger [ForkJoinPool.commonPool-worker-1] ==>  Preparing: select * from product where id = ? and status='ACTIVE'
+2022-01-24 22:44:39,679 DEBUG o.a.i.l.j.BaseJdbcLogger [ForkJoinPool.commonPool-worker-1] ==> Parameters: 29(String)
+2022-01-24 22:44:39,690 DEBUG o.a.i.l.j.BaseJdbcLogger [ForkJoinPool.commonPool-worker-1] <==      Total: 0
+2022-01-24 22:44:39,691 ERROR c.e.m.s.p.ProductServiceImpl [ForkJoinPool.commonPool-worker-1] Product not found for id:29
+2022-01-24 22:44:39,694 ERROR c.e.m.c.ProductController [ForkJoinPool.commonPool-worker-1] Unable to archive product due to {}
+java.util.concurrent.CompletionException: org.springframework.web.server.ResponseStatusException: 400 BAD_REQUEST "Product not found."
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:273) ~[?:1.8.0_271]
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:280) [?:1.8.0_271]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1606) [?:1.8.0_271]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1596) [?:1.8.0_271]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289) [?:1.8.0_271]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1067) [?:1.8.0_271]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1703) [?:1.8.0_271]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:172) [?:1.8.0_271]
+Caused by: org.springframework.web.server.ResponseStatusException: 400 BAD_REQUEST "Product not found."
+	at com.example.maybankTest.services.product.ProductServiceImpl.execute(ProductServiceImpl.java:91) ~[classes/:?]
+	at com.example.maybankTest.services.product.ProductServiceImpl$$FastClassBySpringCGLIB$$5ddf8409.invoke(<generated>) ~[classes/:?]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.2.15.RELEASE.jar:5.2.15.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779) ~[spring-aop-5.2.15.RELEASE.jar:5.2.15.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.2.15.RELEASE.jar:5.2.15.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.2.15.RELEASE.jar:5.2.15.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:367) ~[spring-tx-5.2.15.RELEASE.jar:5.2.15.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118) ~[spring-tx-5.2.15.RELEASE.jar:5.2.15.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.15.RELEASE.jar:5.2.15.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.2.15.RELEASE.jar:5.2.15.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692) ~[spring-aop-5.2.15.RELEASE.jar:5.2.15.RELEASE]
+	at com.example.maybankTest.services.product.ProductServiceImpl$$EnhancerBySpringCGLIB$$3949496f.execute(<generated>) ~[classes/:?]
+	at com.example.maybankTest.controller.ProductController.lambda$updateProductById$2(ProductController.java:45) ~[classes/:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1604) ~[?:1.8.0_271]
+	... 5 more
+2022-01-24 22:44:43,322 INFO c.e.m.s.p.ProductServiceImpl [ForkJoinPool.commonPool-worker-1] Execute product update:UpdateProductCommand(productId=0, productName=Elsa, productType=TOYS, productPricePerUnit=11.59, productQuantity=12, modifiedBy=Grace)
+2022-01-24 22:44:43,323 DEBUG o.a.i.l.j.BaseJdbcLogger [ForkJoinPool.commonPool-worker-1] ==>  Preparing: select * from product where id = ? and status='ACTIVE'
+2022-01-24 22:44:43,324 DEBUG o.a.i.l.j.BaseJdbcLogger [ForkJoinPool.commonPool-worker-1] ==> Parameters: 0(String)
+2022-01-24 22:44:43,324 DEBUG o.a.i.l.j.BaseJdbcLogger [ForkJoinPool.commonPool-worker-1] <==      Total: 0
+2022-01-24 22:44:43,324 ERROR c.e.m.s.p.ProductServiceImpl [ForkJoinPool.commonPool-worker-1] Product not found for id:0
+2022-01-24 22:44:43,325 ERROR c.e.m.c.ProductController [ForkJoinPool.commonPool-worker-1] Unable to archive product due to {}
+java.util.concurrent.CompletionException: org.springframework.web.server.ResponseStatusException: 400 BAD_REQUEST "Product not found."
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:273) ~[?:1.8.0_271]
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:280) [?:1.8.0_271]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1606) [?:1.8.0_271]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1596) [?:1.8.0_271]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289) [?:1.8.0_271]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1067) [?:1.8.0_271]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1703) [?:1.8.0_271]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:172) [?:1.8.0_271]
+Caused by: org.springframework.web.server.ResponseStatusException: 400 BAD_REQUEST "Product not found."
+	at com.example.maybankTest.services.product.ProductServiceImpl.execute(ProductServiceImpl.java:91) ~[classes/:?]
+	at com.example.maybankTest.services.product.ProductServiceImpl$$FastClassBySpringCGLIB$$5ddf8409.invoke(<generated>) ~[classes/:?]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.2.15.RELEASE.jar:5.2.15.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779) ~[spring-aop-5.2.15.RELEASE.jar:5.2.15.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.2.15.RELEASE.jar:5.2.15.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.2.15.RELEASE.jar:5.2.15.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:367) ~[spring-tx-5.2.15.RELEASE.jar:5.2.15.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118) ~[spring-tx-5.2.15.RELEASE.jar:5.2.15.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.15.RELEASE.jar:5.2.15.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.2.15.RELEASE.jar:5.2.15.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692) ~[spring-aop-5.2.15.RELEASE.jar:5.2.15.RELEASE]
+	at com.example.maybankTest.services.product.ProductServiceImpl$$EnhancerBySpringCGLIB$$3949496f.execute(<generated>) ~[classes/:?]
+	at com.example.maybankTest.controller.ProductController.lambda$updateProductById$2(ProductController.java:45) ~[classes/:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1604) ~[?:1.8.0_271]
+	... 5 more
+2022-01-24 22:45:10,399 INFO c.e.m.s.p.ProductServiceImpl [ForkJoinPool.commonPool-worker-2] Execute product update:UpdateProductCommand(productId=1, productName=Elsa, productType=TOYS, productPricePerUnit=11.59, productQuantity=12, modifiedBy=Grace)
+2022-01-24 22:45:10,399 DEBUG o.a.i.l.j.BaseJdbcLogger [ForkJoinPool.commonPool-worker-2] ==>  Preparing: select * from product where id = ? and status='ACTIVE'
+2022-01-24 22:45:10,400 DEBUG o.a.i.l.j.BaseJdbcLogger [ForkJoinPool.commonPool-worker-2] ==> Parameters: 1(String)
+2022-01-24 22:45:10,401 TRACE o.a.i.l.j.BaseJdbcLogger [ForkJoinPool.commonPool-worker-2] <==    Columns: id, created_by, date_created, date_modified, modified_by, product_name, product_price_per_unit, product_quantity, product_type, status
+2022-01-24 22:45:10,402 TRACE o.a.i.l.j.BaseJdbcLogger [ForkJoinPool.commonPool-worker-2] <==        Row: 1, Grace, 2022/01/24 22:44:32, null, null, Bearbrick 2, 35.0, 20, TOYS, ACTIVE
+2022-01-24 22:45:10,403 DEBUG o.a.i.l.j.BaseJdbcLogger [ForkJoinPool.commonPool-worker-2] <==      Total: 1
+2022-01-24 22:45:10,404 DEBUG o.a.i.l.j.BaseJdbcLogger [ForkJoinPool.commonPool-worker-2] ==>  Preparing: UPDATE product SET product_name = ?, product_type = ?, product_price_per_unit = ?, product_quantity = ?, status = ?, date_modified = ?, modified_by = ? WHERE id = ?;
+2022-01-24 22:45:10,405 DEBUG o.a.i.l.j.BaseJdbcLogger [ForkJoinPool.commonPool-worker-2] ==> Parameters: Elsa(String), TOYS(String), 11.59(Double), 12(Integer), ACTIVE(String), 2022/01/24 22:45:10(String), Grace(String), 1(Long)
+2022-01-24 22:45:10,407 DEBUG o.a.i.l.j.BaseJdbcLogger [ForkJoinPool.commonPool-worker-2] <==    Updates: 1
+2022-01-24 22:45:10,407 INFO c.e.m.s.p.ProductServiceImpl [ForkJoinPool.commonPool-worker-2] Successfully update product: Product(id=1, productName=Elsa, productType=TOYS, productPricePerUnit=11.59, productQuantity=12, status=ACTIVE, dateCreated=2022/01/24 22:44:32, dateModified=2022/01/24 22:45:10, createdBy=Grace, modifiedBy=Grace)
+2022-01-24 22:45:18,859 INFO c.e.m.s.p.ProductServiceImpl [ForkJoinPool.commonPool-worker-2] Retrieve country details for code:my
+2022-01-24 22:45:21,856 INFO c.e.m.s.p.ProductServiceImpl [ForkJoinPool.commonPool-worker-2] Successfully retrieve country details :Country(name=Malaysia, topLevelDomain=[.my], alpha2Code=MY, alpha3Code=MYS, callingCodes=[60], capital=Kuala Lumpur, altSpellings=[MY], subregion=South-Eastern Asia, region=Asia, population=32365998, latlng=[2.5, 112.5], demonym=Malaysian, area=330803.0, gini=41.1, timezones=[UTC+08:00], borders=[BRN, IDN, THA], nativeName=Malaysia, numericCode=458, currencies=[Country.Currency(code=MYR, name=Malaysian ringgit, symbol=RM)], flag=https://flagcdn.com/my.svg)

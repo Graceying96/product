@@ -1,0 +1,21 @@
+2022-01-24 23:13:42,443 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 6.1.7.Final
+2022-01-24 23:13:42,474 INFO o.s.b.StartupInfoLogger [main] Starting MaybankTestApplicationTests on AD0525-NB-01 with PID 20592 (started by ad0525 in C:\Users\AD0525\grace.ng\test\Maybank\maybankTest)
+2022-01-24 23:13:42,479 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v2.3.12.RELEASE, Spring v5.2.15.RELEASE
+2022-01-24 23:13:42,480 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2022-01-24 23:13:43,309 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-24 23:13:43,339 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 20ms. Found 0 JPA repository interfaces.
+2022-01-24 23:13:44,409 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-24 23:13:44,489 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 5.4.32.Final
+2022-01-24 23:13:44,693 INFO o.h.a.c.r.j.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-24 23:13:46,237 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2022-01-24 23:13:48,341 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-01-24 23:13:48,370 INFO o.h.d.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+2022-01-24 23:13:49,437 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-24 23:13:49,449 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-24 23:13:52,408 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-01-24 23:13:52,665 INFO o.s.s.c.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2022-01-24 23:13:53,329 INFO o.s.b.StartupInfoLogger [main] Started MaybankTestApplicationTests in 11.155 seconds (JVM running for 12.65)
+2022-01-24 23:13:53,606 INFO o.s.s.c.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2022-01-24 23:13:53,628 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-24 23:13:53,631 INFO c.z.h.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2022-01-24 23:13:53,636 INFO c.z.h.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.maybankTest.mapper.ProductMapper" >
+
+    <resultMap id="BaseResultMap" type="com.example.maybankTest.entity.Product" >
+        <id column="id" property="id" jdbcType="INTEGER" />
+        <result column="product_name" property="productName" jdbcType="VARCHAR" />
+        <result column="product_type" property="productType" jdbcType="VARCHAR" />
+        <result column="product_price_per_unit" property="productPricePerUnit" jdbcType="DOUBLE" />
+        <result column="product_quantity" property="productQuantity" jdbcType="INTEGER" />
+        <result column="status" property="status" jdbcType="VARCHAR" />
+        <result column="date_created" property="dateCreated" jdbcType="VARCHAR" />
+        <result column="date_modified" property="dateModified" jdbcType="VARCHAR" />
+        <result column="created_by" property="createdBy" jdbcType="VARCHAR" />
+        <result column="modified_by" property="modifiedBy" jdbcType="VARCHAR" />
+    </resultMap>
+
+
+    <select id="findById" parameterType="java.lang.String" resultMap="BaseResultMap">
+        select * from product where id = #{id} and status='ACTIVE'
+    </select>
+
+    <select id="find" parameterType="com.example.maybankTest.entity.Product" resultMap="BaseResultMap">
+        select * from product
+    </select>
+
+    <update id = "updateProduct" parameterType = "com.example.maybankTest.entity.Product">
+        UPDATE product SET product_name = #{productName},
+        product_type = #{productType},
+        product_price_per_unit = #{productPricePerUnit},
+        product_quantity = #{productQuantity},
+        status = #{status},
+        date_modified = #{dateModified},
+        modified_by = #{modifiedBy}
+        WHERE id = #{id};
+    </update>
+
+    <insert id="createProduct" parameterType="com.example.maybankTest.entity.Product">
+        insert into product (product_name,product_type,product_price_per_unit,product_quantity,status,date_created,created_by) values ( #{productName}, #{productType}, #{productPricePerUnit}, #{productQuantity},#{status},#{dateCreated},#{createdBy} )
+    </insert>
+</mapper>
