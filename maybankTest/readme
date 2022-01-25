@@ -1,0 +1,11 @@
+To build and start project locally
+-------------------------------------------------------------------------------
+1. Clone Project from GitHub: https://github.com/Graceying96/product.git
+2. Perform Maven clean install (Click on Maven icon on the right screen, under Lifestyle tab, Ctrl clean + Ctrl install, then run)
+3. Reload project. (Right clicked on pom.xml, go to Maven -> Reload Project)
+4. Start project locally via MaybankTestApplication.
+
+Pre-requisite
+-------------------------------------------------------
+Database Name: TESTDB (Microsoft SQL Server)
+Java 8
